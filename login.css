@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #222222;
+    background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 50%)0/ 15px 15px;
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    background: #222222;
+    background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 50%);
+    border: 1px solid rgb(44,44,43);
+    border-radius: 5px;
+    box-shadow: -5px -5px 5px #ffffff0d,
+    5px 5px 5px #000000a6,
+    10px 10px 10px #000000a6,
+    15px 15px 15px #000000a6,
+    20px 20px 20px #000000a6;
+    margin-left: 35%;
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+}
+.box h1{
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.usid{
+    border: 2px solid #3498db;
+    background: #222;
+    background: linear-gradient(#333, #222);
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 2px 0 #000;
+    color: #888;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    font-family: 'cabin' Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-shadow: 0 -1px 0 #000;
+    border-radius: 24px;
+    transition: 0.25;
+
+}
+.usid::-webkit-input-placeholder{
+    color: #888;
+}
+.usid:-moz-placeholder{
+    color: #888;
+}
+.usid:focus{
+    width: 280px;
+    animation: glow 800ms ease-out infinite alternate;
+    background: #222922;
+    background: linear-gradient(#333933, #222922);
+    border-color: #393;
+    box-shadow: 0 0 5px #00ff0033, inset 0 0 5px #00ff001a, 0 2px 0 #000;
+    color: #efe;
+    outline: none;
+}
+.usid:focus::-webkit-input-placeholder{
+    color: #efe;
+}
+.usid:focus:-moz-placeholder{
+    color: #efe;
+}
+.button{
+    background: #222;
+    background: linear-gradient(#333, #222);
+    box-sizing: border-box;
+    border: 2px solid #2ecc71;
+    box-shadow: 0 2px 0 #000;
+    color: #efe;
+    display: block;
+    font-family: 'cabin' Arial, Helvetica, sans-serif;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25;
+    cursor: pointer;
+}
+.button:hover, .button:focus{
+    animation: glow 800ms ease-out infinite alternate;
+    background: #292929;
+    background: linear-gradient(#393939, #292929);
+    color: #5f5;
+    outline: none;
+}
+@keyframes glow {
+    0%{
+        border-color: #393;
+        box-shadow: 0 0 5px #00ff0033, inset 0 0 5px #00ff001a, 0 2px 0 #000 ;
+    }
+    100%{
+        border-color: #6f6;
+        box-shadow: 0 0 20px #00ff0099, inset 0 0 10px #00ff0066, 0 2px 0 #000;
+    }
+}

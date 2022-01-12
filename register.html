@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="register.css" rel="stylesheet">
+    <title>Registration</title>
+    <script type="text/javascript">
+   
+      function confirm()
+      {
+        var paswd=document.getElementById("paswd");
+        var cpswd=document.getElementById("cpaswd");
+        if(paswd.value==cpaswd.value)
+        {
+            return true;
+        }
+        else{
+          alert("passwords doesnot match" <br> "please type again");
+        }
+      }
+    </script>
+    <div>
+     
+    </div>
+</head>
+<body>
+    <div class="warpper fl">
+        <div class="main">
+            <h1>
+Create Account</h1>
+<form  action="newreg.php" method="POST">
+<div class="input-group">
+                <div class="input-box">
+                <p>
+<input type="text" name="firstname" placeholder=" First Name" class="intpt" ></p></div></div>
+<p>
+<input type="text" name="lastname" placeholder=" Last Name"class="intpt" ></p>
+<p>
+<input type="email" name="email" placeholder="✉ Email" class="intpt"></p>
+<p>
+  <input type="phonenumber" name="phonenumber"placeholder="phonenumber"class="intpt" id="intpt">
+ </p>
+<P>
+<input type="password" name="password" placeholder=" password" class="intpt" id="paswd" ></p>
+
+<p>
+<input type="password" name="rpass" placeholder=" Confirm password" class="intpt" id="cpaswd"></p>
+
+<div class="bott">
+                <p>
+				<a href="front page.html">
+<input type="submit" type="sub" value="Register" class="btn fl sub" onsubmit="confirm()"></a></p>
+<p>
+<input type="reset" type="sub" value="Reset" class="btn fr res"></p>
+
+</div>
+</form>
+</div>
+</div>
+
+</body>
+</html>

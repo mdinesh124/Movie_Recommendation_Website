@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn/SignUp</title>
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="frontpage.css" rel="stylesheet">
+</head>
+<body>
+<Script type="text/javascript">
+        function validate()
+        {
+           var username=document.getElementById("uid");
+           var password=document.getElementById("pswd");
+           if(username.value=="sumanth"&&password.value=="007")
+           {
+               return true;
+           }
+           else if(username.value==""||password.value=="")
+           {
+              alert("no blanks allowed")
+              return false;
+           }
+
+           else{
+               alert("please enter valid username and password")
+           }
+        
+        }
+    </Script>
+    <div class="wrapper">
+        <div class="header fl">
+            <div class="sub-header">
+                <div class="top-header">
+                    <div class="logo fl">
+                        <p>
+AMB<span> CINEMAS</span></p>
+<h3>
+SUPERPLEX</h3>
+</div>
+<div class="nav fr">
+                        <ul>
+<li><a href="">HOME</a></li>
+<li><a href="https://ambcinemas.in/">ABOUT</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</div>
+</div>
+
+<!--------end top header-->
+            </div>
+<!----end sub header-->
+
+            <div class="bttm">
+                <div class="btn-head fl">
+                   <br>
+                   <br>
+                   <br> <h1>
+AMB CINEMAS</a> </h1>
+<h5></h5>
+<div class="bcom fl" >
+                        <p><a href="register.html">
+BECOME A MEMBER </a></p>
+</div>
+<div class="bcom fl">
+                        <p><a href="https://ambcinemas.in/">
+LEARN MORE</a></p>
+</div>
+</div>
+<div class="btn-head fr">
+    <br>
+    <br>
+    <br>
+    <br>
+                    <div id="form">
+                        <h2>
+LOGIN</h2>
+<form action="validate.php" method="POST">
+                            <p>
+<input type="text" name="uname" placeholder="username" class="inpt" required></p>
+<p>
+<input type="password" name="uid" placeholder="password" class="inpt" required></p>
+<p>
+<input type="submit" name="login" value="SUBMIT" class="log"></p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
